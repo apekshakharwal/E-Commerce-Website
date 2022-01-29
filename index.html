@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pika-Pi Online Shopping</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 10000px;
+  position: relative;
+  margin: auto;
+}
+
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+  <!-- header section starts  -->
+
+<header>
+    <a href="#" class="logo"><i class="fa fa-shopping-bag" aria-hidden="true"></i>Pika-Pi <img src="images/pika.jpg"></a>
+    
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+      
+        <a href="#women">women</a>
+        <a href="#men">men</a>
+        <a href="#kids">kids</a>
+        <a href="#beauty">beauty</a>
+        <a href="#place order">place order</a>
+    </nav>
+</header>
+<br><br> <br><br> <br><br><br><br> 
+
+<!-- header section ends -->
+    
+<!--slider section starts-->
+<div class="slideshow-container">
+
+<div class="mySlides fade"> 
+  <img src="images/bg-2.jpg" style="width:100%"> 
+</div>
+
+<div class="mySlides fade">
+    <img src="images/bg-1.jpg" style="width:100%">  
+</div>
+
+<div class="mySlides fade">
+  <img src="images/bg-3.jpg" style="width:100%">
+</div><br>
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+</div>
+
+<!--Slider section ends-->
+
+<br><br> <br><br> <br><br><br><br> <br><br> 
+  
+
+<!-- Women's section starts  -->
+
+<section class="women" id="women">
+
+    <h1 class="heading"> <span>Women's</span> Fasion </h1><br>
+
+    <div class="box-container">
+
+        <div class="box">
+            <span class="price">Rs.1840 </span>
+            <img src="images/w-1.jpg" alt="">
+            <h3>LIBAS<br>Navy Blue Pure Cotton Ploral Print Kurta with Palazzo & Dupatta</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <span class="price">Rs.1759 </span>
+            <img src="images/w-2.jpg" alt="">
+            <h3>ANUBHUTEE<br>Ethnic Motifs Embroidered Thread work Kurta</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <span class="price">Rs.1339 </span>
+            <img src="images/w-3.jpg" alt="">
+            <h3>LIBAS<br>Blue Motifs Printed Pure Cotton Kurta with Palazzo & Dupatta</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <span class="price">Rs.1200</span>
+            <img src="images/w-4.jpg" alt="">
+            <h3>AHIKA<br>Pink & White Printed Straight Kurta</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <span class="price">Rs.2599</span>
+            <img src="images/w-5.jpg" alt="">
+            <h3>INDUS<br>Black Solid Anarkali Kurta with Dupatta</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <span class="price">Rs.2499</span>
+            <img src="images/w-6.jpg" alt="">
+            <h3>GERUA<br>Yellow & White Ikat Print Kurta with Palazzo</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Women's section Ends -->
+
+<!-- Men's section Starts -->
+
+<section class="men" id="men">
+
+    <h1 class="heading"> <span>Men's</span> Fasion </h1><br>
+
+    <div class="box-container">
+
+        <div class="box">
+            <span class="price">Rs.3999</span>
+            <img src="images/m-1.jpg" alt="">
+            <h3>KISAH<br>Black Pleated Kurta with Pyjamas with Nehru Jacket</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <span class="price">Rs.2599 </span>
+            <img src="images/m-2.jpg" alt="">
+            <h3>DEYANN<br>Brown Printed Panelled Dupion Silk Kurta with Dhoti Pant</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <span class="price">3199</span>
+            <img src="images/m-3.jpg" alt="">
+            <h3>HANGUP<br>Floral Printed Kurta with Patiala & Jacket</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <span class="price">Rs.2999</span>
+            <img src="images/m-4.jpg" alt="">
+            <h3>VASTRAMAY<br>Turqoise Blue & Cream Kurta with Churidar</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <span class="price">Rs.2599</span>
+            <img src="images/m-5.jpg" alt="">
+            <h3>Purple Regular Thread Work Dupion Silk Kurta with Churidar & Nehru Jacket</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <span class="price">Rs.3509</span>
+            <img src="images/m-6.jpg" alt="">
+            <h3>HANGUP<br>Maroon Regular Dupion Silk Kurta with Chudidar</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+
+    </div>
+
+</section>
+<!-- Men's section Ends -->
+
+<!-- Kids section starts  -->
+
+<section class="kids" id="kids">
+
+    <h1 class="heading">  <span>Kid's</span> Fasion </h1><br>
+
+    <div class="box-container">
+
+        <div class="box">
+            <span class="price">Rs.2199 </span>
+            <img src="images/k-1.jpg" alt="">
+            <h3>PINK CHICK<br>Black Embellished Sequined Peplum Dress </h3>
+           <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <span class="price">Rs.2899</span>
+            <img src="images/k-2.jpg" alt="">
+            <h3>PINK CHICK<br>Navy Blue & Pink Colour blocked Layered Satin Dress</h3>
+           
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <span class="price">Rs.2570 </span>
+            <img src="images/k-3.jpg" alt="">
+            <h3>PINK CHICK<br>Blue Sequined Net Maxi Dress</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <span class="price">Rs.2499</span>
+            <img src="images/k-4.jpg" alt="">
+            <h3>SG YUVRAJ<br>Turquoise Blue & Gold-coloured Woven-Design Silk Sherwani</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <span class="price">1449</span>
+            <img src="images/k-5.jpg" alt="">
+            <h3>SG YUVRAJ<br>Black Solid Suit</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <span class="price">Rs.1999</span>
+            <img src="images/k-6.jpg" alt="">
+            <h3>BOWNBEE<br>Green Solid Waistcoat</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Kids section ends -->
+
+<!-- Beauty section starts  -->
+
+<section class="beauty" id="beauty">
+
+    <h1 class="heading">  <span> Beauty </span>Products </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <span class="price">Rs.299</span>
+            <img src="images/b-1.jpg" alt="">
+            <div class="content">
+                <h3>LIPSTICK</h3>
+                <p>RENEE<br>Matte Liquid Lip Color Castle of Nude 2.5ml</p>
+                <a href="#" class="btn">ordern now</a>
+            </div>
+        </div>
+        <div class="box">
+            <span class="price">Rs.289</span>
+            <img src="images/b-2.jpg" alt="">
+            <div class="content">
+                <h3>NAIL POLISH</h3>
+                <p>LAKME<br>Absolute Gel Stylist Nail Color-38 Carbon, 12 ml</p>
+                <a href="#" class="btn">ordern now</a>
+            </div>
+        </div>
+        <div class="box">
+            <span class="price">Rs.599</span>
+            <img src="images/b-3.jpg" alt="">
+            <div class="content">
+                <h3>MAYBELLINE</h3>
+                <p>FOUNDATION <br>New York Fit Me Matte + Poreless Liquid Foundation-128 Warm Nude 30 ml</p>
+                <a href="#" class="btn">ordern now</a>
+            </div>
+        </div>
+        <div class="box">
+            <span class="price">Rs.1999</span>
+            <img src="images/b-4.jpg" alt="">
+            <div class="content">
+                <h3>EYESHADOW</h3>
+                <p>BEAUTY GLAZED<br>4-Pieces Color Board Eyeshadow</p>
+                <a href="#" class="btn">ordern now</a>
+            </div>
+        </div>
+        <div class="box">
+            <span class="price">Rs.499</span>
+            <img src="images/b-5.jpg" alt="">
+            <div class="content">
+                <h3>KAJAL</h3>
+                <p>LAKME<br>set of 2 eyeconic kajal-deep black 0.70f each</p>
+                <a href="#" class="btn">ordern now</a>
+            </div>
+        </div>
+        <div class="box">
+            <span class="price">Rs.899</span>
+            <img src="images/b-6.jpg" alt="">
+            <div class="content">
+                <h3>MASCARA</h3>
+                <p>SUGAR<br>cosmetics double date extreme volume mascara-7 ml</p>
+                <a href="#" class="btn">ordern now</a>
+            </div>
+        </div>
+        <div class="box">
+            <span class="price">Rs.2299</span>
+            <img src="images/b-7.jpg" alt="">
+            <div class="content">
+                <h3>HAIR STYLER</h3>
+                <p>HAVELLS<br>Black Hair care styler</p>
+                <a href="#" class="btn">ordern now</a>
+            </div>
+        </div>
+        <div class="box">
+            <span class="price">Rs.2399</span>
+            <img src="images/b-8.jpg" alt="">
+            <div class="content">
+                <h3>HAIR DRYER</h3>
+                <p>SYSKA<br>professional series 2000w HDP1000 hair dryer</p>
+                <a href="#" class="btn">ordern now</a>
+            </div>
+        </div>
+        <div class="box">
+            <span class="price">Rs.1399</span>
+            <img src="images/b-9.jpg" alt="">
+            <div class="content">
+                <h3>EPLILATOR</h3>
+                <p>NOVA <br> NLS 533 sensitive touch facial trimmer</p>
+                <a href="#" class="btn">ordern now</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Beauty section ends -->
+
+<!-- review section starts  -->
+
+<section class="review" >
+
+    <h1 class="heading"> our customers <span>reviews</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/r-1.jpg" alt="">
+            <h3>Olivia</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p>I Have been shopping on Pika-pi for years now and not once they have disappointed me or any of my near ones. They have a wide range of pocket friendly-foreign brands and made in India products as well. Their product range quality is really good and reliable.  Great quality, pocket friendly & arrived before time; packed really well and amazing service by delivery team. Its always a delight to shop from Pika-pi.</p>
+        </div>
+        <div class="box">
+            <img src="images/r-2.jpg" alt="">
+            <h3>Ava</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p>pika-pi is the good product, there are proper orders and deliveries, we don't have to wait longer for the product. as we all know that we can get anything on pika-pi. they give safe delivery.</p>
+        </div>
+        <div class="box">
+            <img src="images/r-3.jpg" alt="">
+            <h3>William</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p>I use this website frequently for my apparels purchase. They provide great quality, fitting, and value for the purchase.I recommend this for clothes and assecories.
+                
+                They provide timely return and replacement policy as well.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section ends -->
+
+<!-- place order section starts  -->
+
+<section class="order" id="place order"><br>
+
+    <h1 class="heading">Place Your <span>order</span>  </h1><br><br>
+   
+    <div class="row">
+        
+        <div class="image">
+            <img src="images/order.png" alt="">
+        </div>
+        <form onsubmit="return validation()" name="Submit-google form" method = "POST"> 
+        <form action="">
+            
+            <div class="inputBox">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="E-mail">
+            </div>
+
+            <div class="inputBox">
+                <input type="number" placeholder="Number">
+                <input type="text" placeholder="Product Name">
+            </div>
+
+             <div class="inputBox">
+                <input type="text" placeholder=" Size: S M L XL XXL">
+        
+            </div>
+
+            <textarea placeholder="Address" name="" id="" cols="30" rows="10"></textarea>
+
+            <input type="submit" value="Place Order" class="btn">
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- Place order section ends -->
+
+<!-- footer section  -->
+
+<footer>   
+    <div class="container"><br><br>
+     <div class="avatar">   
+         <img 
+         class="APEK"
+         src ="https://play-lh.googleusercontent.com/e3B0Wn4mVcXcUYL8a1yo3SneQ7xAsOsvwcWzY-JJD8ZXp0c_jxZz6rNdJhVbX4ZEY7E">
+       </a>
+     </div><br><br>
+    
+     <div class="doc">
+     <div class="doc">
+     <h3>Follow Me On</h3> <br>|
+   
+        <a href="https://www.facebook.com/apeksha.kharwal"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>|
+        <a href="https://instagram.com/_di_no___?utm_medium=copy_link"><i class="fa fa-instagram" aria-hidden="true"></i></a>|
+        <a href="https://www.linkedin.com/in/apeksha-kharwal-16a4841b0/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>|<br><br>
+                         <p>©2022 Created By Apeksha Kharwal</p>
+     </div>
+     </div><br>
+     </div>
+</footer>
+
+
+
+<!-- loader  -->
+<div class="loader-container">
+    <img src="images/gif.gif" alt="loader">
+</div> 
+
+<!-- scroll top button  -->
+<a href="#" class="fas fa-angle-up" id="scroll-top"></a>
+<!--js link-->
+<script src="script.js"></script>
+
+</body>
+</html>
