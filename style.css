@@ -448,11 +448,10 @@ header .navbar a:hover{
     height:20rem;
   }
   
-   .box-container .box .price{
+  .box-container .box .price{
     top:3rem; left:3rem;
-    font-size: 0.3rem;
+    font-size: 0.7rem;
   }
-  
    .box-container .box h3{
     font-size: 1.5rem;
   }
