@@ -554,21 +554,35 @@ img {vertical-align: middle;}
         <form action="">
             
             <div class="inputBox">
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="E-mail">
+                <input type="text" placeholder="Name" required/>
+                <input type="email" placeholder="E-mail" required/>
             </div>
 
             <div class="inputBox">
-                <input type="number" placeholder="Number">
-                <input type="text" placeholder="Product Name">
+                <input type="number" placeholder="Number" required/>
+                <input type="text" placeholder="Product Name" required/>
             </div>
 
              <div class="inputBox">
-                <input type="text" placeholder=" Size: S M L XL XXL">
+                <input type="text" placeholder=" Size: S M L XL XXL" required/>
+        
+            </div>
+            <textarea placeholder="Address" name="" id="" cols="30" rows="10" required></textarea>
+
+            <div class="inputBox">
+                <input type="text" placeholder="Cardholder Name" required/>
+                <input type="text" placeholder="Card Number" required/>
         
             </div>
 
-            <textarea placeholder="Address" name="" id="" cols="30" rows="10"></textarea>
+
+            <div class="inputBox">
+            <input type="text" placeholder="Card Type" required/>
+            <input type="number" placeholder="cvv" required/>
+            <input type="date"  placeholder="Expiry Date" required />
+            </div>  
+
+           
 
             <input type="submit" value="Place Order" class="btn">
 
@@ -579,6 +593,7 @@ img {vertical-align: middle;}
 </section>
 
 <!-- Place order section ends -->
+
 
 <!-- footer section  -->
 
